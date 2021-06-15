@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/featureVehicleNavGraph"
+    android:id="@+id/service_nav_grahp">
+
+    <include-dynamic
+        android:id="@+id/featureVehicleNavGraph"
+        app:graphResName="feature_vehicle_nav_graph"
+        app:moduleName="vehicle" />
+
+    <include-dynamic
+        android:id="@+id/featurePhotoNavGraph"
+        app:graphResName="feature_photo_nav_graph"
+        app:moduleName="photo" />
+
+    <include-dynamic
+        android:id="@+id/featureComPricingNavGraph"
+        app:graphResName="feature_com_pricing_nav_graph"
+        app:moduleName="compricing" />
+
+    <include-dynamic
+        android:id="@+id/featureServicesAllNavGraph"
+        app:graphResName="feature_services_all_nav_graph"
+        app:moduleName="services_all" />
+</navigation>

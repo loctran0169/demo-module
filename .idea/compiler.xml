@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="1.7">
+      <module name="Demo_Module.app" target="11" />
+      <module name="Demo_Module.buildScr" target="11" />
+      <module name="Demo_Module.features.client" target="11" />
+      <module name="Demo_Module.features.compricing" target="11" />
+      <module name="Demo_Module.features.estimate" target="11" />
+      <module name="Demo_Module.features.photo" target="11" />
+      <module name="Demo_Module.features.scheduling" target="11" />
+      <module name="Demo_Module.features.service_hail" target="11" />
+      <module name="Demo_Module.features.service_part" target="11" />
+      <module name="Demo_Module.features.service_pdr" target="11" />
+      <module name="Demo_Module.features.services" target="11" />
+      <module name="Demo_Module.features.services_all" target="11" />
+      <module name="Demo_Module.features.vehicle" target="11" />
+      <module name="Demo_Module.services_all" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

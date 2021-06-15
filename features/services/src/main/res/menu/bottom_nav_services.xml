@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/featureVehicleNavGraph"
+        android:icon="@drawable/ic_card_travel"
+        android:title="Vehicle info" />
+
+    <item
+        android:id="@+id/featurePhotoNavGraph"
+        android:icon="@drawable/ic_card_travel"
+        android:title="Photo" />
+
+    <item
+        android:id="@+id/featureComPricingNavGraph"
+        android:icon="@drawable/ic_card_travel"
+        android:title="Com pricing" />
+
+    <item
+        android:id="@+id/featureServicesAllNavGraph"
+        android:icon="@drawable/ic_card_travel"
+        android:title="Services All" />
+</menu>

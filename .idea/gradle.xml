@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="PLATFORM" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/buildScr" />
+            <option value="$PROJECT_DIR$/common" />
+            <option value="$PROJECT_DIR$/common/network" />
+            <option value="$PROJECT_DIR$/features" />
+            <option value="$PROJECT_DIR$/features/client" />
+            <option value="$PROJECT_DIR$/features/compricing" />
+            <option value="$PROJECT_DIR$/features/estimate" />
+            <option value="$PROJECT_DIR$/features/photo" />
+            <option value="$PROJECT_DIR$/features/scheduling" />
+            <option value="$PROJECT_DIR$/features/service_hail" />
+            <option value="$PROJECT_DIR$/features/service_part" />
+            <option value="$PROJECT_DIR$/features/service_pdr" />
+            <option value="$PROJECT_DIR$/features/services" />
+            <option value="$PROJECT_DIR$/features/services_all" />
+            <option value="$PROJECT_DIR$/features/vehicle" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

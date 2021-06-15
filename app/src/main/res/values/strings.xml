@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Demo Module</string>
+    <string name="title_estimate">Module Estimate</string>
+    <string name="title_client">Module Client</string>
+    <string name="title_scheduling">Module Scheduling</string>
+    <string name="title_services">Module Title</string>
+    <string name="title_vehicle">Module Vehicle</string>
+    <string name="title_photo">Module Photo</string>
+    <string name="title_compricing">Module Com Pricing</string>
+    <string name="title_service_hail">Module Service Hail</string>
+    <string name="title_service_part">Module Service Part</string>
+    <string name="title_service_pdr">Module Service Pdr</string>
+    <string name="title_services_all">Module Services All</string>
+</resources>

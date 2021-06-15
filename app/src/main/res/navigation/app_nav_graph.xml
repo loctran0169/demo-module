@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.watasolutions.demomodule.fragment.HomeFragment" />
+
+    <include-dynamic
+        android:id="@+id/featureEstimateNavGraph"
+        app:graphResName="feature_estimate_nav_graph"
+        app:moduleName="estimate" />
+
+    <include-dynamic
+        android:id="@+id/featureServicesNavGraph"
+        app:graphResName="feature_services_nav_graph"
+        app:moduleName="services" />
+
+    <action
+        android:id="@+id/action_global_estimate_flow"
+        app:destination="@id/featureEstimateNavGraph"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim" />
+
+    <action
+        android:id="@+id/action_global_services_flow"
+        app:destination="@id/featureServicesNavGraph"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim" />
+</navigation>
