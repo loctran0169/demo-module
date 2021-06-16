@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.watasolutions.demomodule.navigation.NavigationFlow
+import com.watasolutions.demomodule.navigation.ToFlowNavigatable
 import com.watasolutions.services_all.R
 import com.watasolutions.services_all.databinding.FragmentServicesAllBinding
 import kotlinx.android.synthetic.main.fragment_services_all.*
@@ -22,6 +24,14 @@ class ServicesAllFragment : Fragment() {
 
         tvPdr.setOnClickListener {
             findNavController().navigate(R.id.action_global_pdr_flow)
+        }
+
+        tvHail.setOnClickListener {
+            findNavController().navigate(R.id.action_global_hail_flow)
+        }
+
+        tvPart.setOnClickListener {
+            (requireActivity() as ToFlowNavigatable).navigateToFlow(NavigationFlow.ServicePartFlow)
         }
     }
 }

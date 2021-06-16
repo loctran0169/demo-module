@@ -11,9 +11,20 @@
         app:graphResName="feature_services_pdr_nav_graph"
         app:moduleName="service_pdr" />
 
+    <include-dynamic
+        android:id="@+id/featureHailNavGraph"
+        app:graphResName="feature_services_hail_nav_graph"
+        app:moduleName="service_hail" />
+
     <action
         android:id="@+id/action_global_pdr_flow"
         app:destination="@id/featurePdrNavGraph"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim" />
+
+    <action
+        android:id="@+id/action_global_hail_flow"
+        app:destination="@id/featureHailNavGraph"
         app:enterAnim="@anim/nav_default_enter_anim"
         app:exitAnim="@anim/nav_default_exit_anim" />
 </navigation>

@@ -5,11 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.Navigation
-import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.watasolutions.services.R
+import com.watasolutions.services.adapter.ViewPagerAdapter
 import com.watasolutions.services.databinding.FragmentServicesBinding
 import kotlinx.android.synthetic.main.fragment_services.*
 
@@ -17,18 +15,25 @@ class ServicesFragment : Fragment() {
 
 //    private val navController get() = Navigation.findNavController(requireActivity(), R.id.navHostServicesFragment)
 
+    private lateinit var viewPagerAdapter: ViewPagerAdapter
+
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.featureVehicleNavGraph -> {
-//                main_view_pager.currentItem = 0
+                viewPager.currentItem = 0
                 return@OnNavigationItemSelectedListener true
             }
             R.id.featurePhotoNavGraph -> {
-//                main_view_pager.currentItem = 1
+                viewPager.currentItem = 1
                 return@OnNavigationItemSelectedListener true
             }
             R.id.featureComPricingNavGraph -> {
-
+                viewPager.currentItem = 2
+                return@OnNavigationItemSelectedListener true
+            }
+            R.id.featureServicesAllNavGraph -> {
+                viewPager.currentItem = 3
+                return@OnNavigationItemSelectedListener true
             }
         }
         false
@@ -41,11 +46,28 @@ class ServicesFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val navHostFragment = childFragmentManager.findFragmentById(
-            R.id.navHostServicesFragment
-        ) as NavHostFragment
+//        val navHostFragment = childFragmentManager.findFragmentById(
+//            R.id.navHostServicesFragment
+//        ) as NavHostFragment
 //        navController = navHostFragment.navController
-        bnvServices.setupWithNavController(navHostFragment.navController)
+//        val navGraphIds = listOf(
+//            R.navigation.vehicle_nav,
+//            R.navigation.photo_graph,
+//            R.navigation.com_pricing_nav,
+//            R.navigation.services_all_nav
+//        )
+//
+//        val controller = bnvServices.setupWithNavController(
+//            navGraphIds = navGraphIds,
+//            fragmentManager = childFragmentManager,
+//            containerId = R.id.navHostServicesFragment,
+//            intent = requireActivity().intent
+//        )
+//        bnvServices.setupWithNavController(navHostFragment.navController)
 //        bnvServices.setOnNavigationItemReselectedListener { }
+
+        viewPagerAdapter = ViewPagerAdapter(childFragmentManager)
+        viewPager.adapter = viewPagerAdapter
+        bnvServices.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
     }
 }

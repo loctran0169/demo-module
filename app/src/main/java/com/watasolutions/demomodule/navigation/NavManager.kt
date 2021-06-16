@@ -10,9 +10,11 @@ class NavManager {
     lateinit var navController: NavController
 
     fun navigateToFlow(navigationFlow: NavigationFlow) = when (navigationFlow) {
-        NavigationFlow.ClientFlow -> navController.navigate(AppNavGraphDirections.actionGlobalEstimateFlow())
+        NavigationFlow.ClientFlow -> navController.navigate(AppNavGraphDirections.actionGlobalClientFlow())
         NavigationFlow.EstimateFlow -> navController.navigate(AppNavGraphDirections.actionGlobalEstimateFlow())
         NavigationFlow.ServicesFlow -> navController.navigate(AppNavGraphDirections.actionGlobalServicesFlow())
+        NavigationFlow.ServicePartFlow -> navController.navigate(AppNavGraphDirections.actionGlobalServicePartFlow())
+        NavigationFlow.SchedulingFlow -> navController.navigate(AppNavGraphDirections.actionGlobalSchedulingFlow())
     }
 
     fun navigate(navDirections: NavDirections) {

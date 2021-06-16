@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/services_all_nav"
+    app:startDestination="@id/featureServicesAllNavGraph">
+    <include-dynamic
+        android:id="@+id/featureServicesAllNavGraph"
+        app:graphResName="feature_services_all_nav_graph"
+        app:moduleName="services_all" />
+</navigation>

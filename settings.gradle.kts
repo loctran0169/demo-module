@@ -16,3 +16,4 @@ include(
     ":features:service_pdr"
 )
 include(":features:services_all")
+include(":common:share_reference")

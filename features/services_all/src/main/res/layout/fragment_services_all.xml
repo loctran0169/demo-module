@@ -32,6 +32,6 @@
             android:layout_margin="16dp"
             android:drawableStart="@drawable/ic_card_trave"
             android:drawablePadding="16dp"
-            android:text="PART" />
+            android:text="PART (full app)" />
     </LinearLayout>
 </layout>

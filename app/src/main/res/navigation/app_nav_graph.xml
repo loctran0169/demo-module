@@ -18,6 +18,21 @@
         app:graphResName="feature_services_nav_graph"
         app:moduleName="services" />
 
+    <include-dynamic
+        android:id="@+id/featureClientNavGraph"
+        app:graphResName="feature_client_nav_graph"
+        app:moduleName="client" />
+
+    <include-dynamic
+        android:id="@+id/featureServicePartNavGraph"
+        app:graphResName="feature_services_part_nav_graph"
+        app:moduleName="service_part" />
+
+    <include-dynamic
+        android:id="@+id/featureSchedulingNavGraph"
+        app:graphResName="feature_scheduling_nav_graph"
+        app:moduleName="scheduling" />
+
     <action
         android:id="@+id/action_global_estimate_flow"
         app:destination="@id/featureEstimateNavGraph"
@@ -27,6 +42,24 @@
     <action
         android:id="@+id/action_global_services_flow"
         app:destination="@id/featureServicesNavGraph"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim" />
+
+    <action
+        android:id="@+id/action_global_client_flow"
+        app:destination="@id/featureClientNavGraph"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim" />
+
+    <action
+        android:id="@+id/action_global_service_part_flow"
+        app:destination="@id/featureServicePartNavGraph"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim" />
+
+    <action
+        android:id="@+id/action_global_scheduling_flow"
+        app:destination="@id/featureSchedulingNavGraph"
         app:enterAnim="@anim/nav_default_enter_anim"
         app:exitAnim="@anim/nav_default_exit_anim" />
 </navigation>

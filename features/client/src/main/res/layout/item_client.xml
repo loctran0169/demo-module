@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvClientName"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:gravity="center|start"
+    android:padding="16dp"
+    android:text="Huu Loc"
+    android:textColor="@android:color/black"
+    android:textSize="18sp"
+    android:textStyle="normal" />
